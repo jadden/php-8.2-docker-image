@@ -13,4 +13,4 @@ RUN apt-get update && apt-get install -y \
 
 RUN install-php-extensions curl ftp fileinfo pdo_mysql mysqli openssl pdo_sqlite gd mbstring zip bcmath intl exif
 
-COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+COPY --from=composer:2.7.8 /usr/bin/composer /usr/bin/composer
